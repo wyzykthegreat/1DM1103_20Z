@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+// program zrobiony jest caly w mainie poniewaz nie czuje sie jeszcze pewnie
+// z wywolywaniem osobnych funkcji
 
 int main(int argc, char *argv[])
 {
@@ -47,9 +48,11 @@ int main(int argc, char *argv[])
          }
          //wypisanie wyniku mnozenia
          for(int i=0; i<n1; i++)
-         for(int j=0; j<m2; j++)
-         printf("%f ", tab3[i][j]);
-         printf("\n");
+	{
+         	for(int j=0; j<m2; j++)
+         		printf("%6.1f", tab3[i][j]);
+         	printf("\n");
+	}
     }
     else
         printf("Wymiary tablic nie pozwalaja na mnozenie");
